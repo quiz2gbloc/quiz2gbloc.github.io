@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "Les fluides médicaux sont utilisé pour regrouper:",
-        answers: ["Les liquides", "Les gazs", "Les déchets", "Les médicaments"]
+        answers: ["Les liquides", "Les gaz", "Les déchets", "Les médicaments"]
     },
     {
         question: "Parmi les équipements mobiles de la salle d'opération on destingue:",
