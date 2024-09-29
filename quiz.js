@@ -65,7 +65,8 @@ function checkAnswers() {
     // Validate answers
     questions.forEach((q, index) => {
         const userAnswer = form[`question${index}`].value;
-        if (userAnswer === q.answers[0]) { // Check if the selected answer is correct
+        const correctAnswer = q.answers[0]; // Use the first answer as the correct one
+        if (userAnswer === correctAnswer) {
             score += 25; // Each correct answer adds 25 points
         }
     });
