@@ -1,43 +1,19 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin", "Madrid"]
+        question: "Les fluides médicaux sont utilisé pour regrouper:",
+        answers: ["Les liquides", "Les gazs", "Les déchets", "Les médicaments"]
     },
     {
-        question: "What is 2 + 2?",
-        answers: ["4", "3", "5", "6"]
+        question: "Parmi les équipements mobiles de la salle d'opération on destingue:",
+        answers: ["Bistouri électrique", "Bras plafonnier", "Plateau universel"]
     },
     {
-        question: "What is the largest planet in our solar system?",
-        answers: ["Jupiter", "Mars", "Earth", "Venus"]
+        question: "Bras plafonnier permet l'accés aux:",
+        answers: ["Gaz médicaux", "Médicament", "Matérielles"]
     },
     {
-        question: "What is the speed of light?",
-        answers: ["299,792,458 m/s", "150,000,000 m/s", "300,000 km/s", "299,792 km/s"]
-    },
-    {
-        question: "Who wrote 'Hamlet'?",
-        answers: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy", "Mark Twain"]
-    },
-    {
-        question: "What is the chemical symbol for water?",
-        answers: ["H2O", "O2", "CO2", "H2"]
-    },
-    {
-        question: "What is the hardest natural substance on Earth?",
-        answers: ["Diamond", "Gold", "Iron", "Silver"]
-    },
-    {
-        question: "Which element has the chemical symbol 'O'?",
-        answers: ["Oxygen", "Hydrogen", "Osmium", "Oganesson"]
-    },
-    {
-        question: "Who painted the Mona Lisa?",
-        answers: ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"]
-    },
-    {
-        question: "Which country is known as the Land of the Rising Sun?",
-        answers: ["Japan", "China", "South Korea", "Thailand"]
+        question: "Le défibrillateur aide à:",
+        answers: ["Restaurer la fonction cardiaque", "Anesthésier le patient", "Corriger l'hypotension"]
     }
 ];
 
@@ -90,7 +66,7 @@ function checkAnswers() {
     questions.forEach((q, index) => {
         const userAnswer = form[`question${index}`].value;
         if (userAnswer === q.answers[0]) { // Check if the selected answer is correct
-            score += 10; // Each correct answer adds 10 points
+            score += 25; // Each correct answer adds 25 points
         }
     });
 
@@ -99,7 +75,7 @@ function checkAnswers() {
     resultDiv.style.display = 'block'; // Show result div
 
     // Set the result message and score
-    if (score >= 70) {
+    if (score >= 75) {
         resultMessage.textContent = "Congratulations, you passed!";
     } else {
         resultMessage.textContent = "Better luck next time!";
